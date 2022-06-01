@@ -589,8 +589,8 @@
         "proxy": "",
         "authType": "bearer",
         "senderr": false,
-        "x": 590,
-        "y": 280,
+        "x": 850,
+        "y": 400,
         "wires": [
             [
                 "b481381501d2b414"
@@ -623,12 +623,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 870,
+        "x": 1110,
         "y": 220,
         "wires": [
-            [
-                "9c09e087.a48e7"
-            ]
+            []
         ]
     },
     {
@@ -645,11 +643,10 @@
         "proxy": "",
         "authType": "",
         "senderr": false,
-        "x": 590,
-        "y": 100,
+        "x": 830,
+        "y": 40,
         "wires": [
             [
-                "c153c93bfd0eede3",
                 "e585584fd416aab4"
             ]
         ]
@@ -711,7 +708,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 870,
-        "y": 280,
+        "y": 620,
         "wires": []
     },
     {
@@ -725,29 +722,13 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 880,
-        "y": 160,
+        "x": 1120,
+        "y": 120,
         "wires": [
             [
                 "6a2bc486f2838313"
             ]
         ]
-    },
-    {
-        "id": "c153c93bfd0eede3",
-        "type": "debug",
-        "z": "3c1975f87cd0cabf",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 870,
-        "y": 100,
-        "wires": []
     },
     {
         "id": "e585584fd416aab4",
@@ -768,8 +749,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
-        "y": 160,
+        "x": 870,
+        "y": 120,
         "wires": [
             [
                 "f4f0342516f4afea"
@@ -814,41 +795,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
-        "y": 220,
+        "x": 840,
+        "y": 200,
         "wires": [
             [
-                "1dc8605f.7ac4e",
-                "31cb0d8f651859d8"
-            ]
-        ]
-    },
-    {
-        "id": "bc604bc3fb7cfdf7",
-        "type": "inject",
-        "z": "3c1975f87cd0cabf",
-        "name": "check env var",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "${AUTHORIZATION_HEADER}",
-        "payloadType": "str",
-        "x": 870,
-        "y": 40,
-        "wires": [
-            [
-                "c153c93bfd0eede3"
+                "9c09e087.a48e7"
             ]
         ]
     },
@@ -1010,66 +961,5 @@
                 "ae8ddf10.868fd"
             ]
         ]
-    },
-    {
-        "id": "31cb0d8f651859d8",
-        "type": "debug",
-        "z": "3c1975f87cd0cabf",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 850,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "9c6515fdaefa0834",
-        "type": "inject",
-        "z": "3c1975f87cd0cabf",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 300,
-        "y": 500,
-        "wires": [
-            [
-                "d50bcc2fae3471b2"
-            ]
-        ]
-    },
-    {
-        "id": "d50bcc2fae3471b2",
-        "type": "debug",
-        "z": "3c1975f87cd0cabf",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 550,
-        "y": 540,
-        "wires": []
     }
 ]
