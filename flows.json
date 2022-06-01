@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "de97dacc84a43a42",
+        "type": "tab",
+        "label": "Show message on microbit",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "2924702c.b33a7",
         "type": "subflow",
         "name": "ui-table handler",
@@ -557,6 +565,33 @@
         "hidden": false
     },
     {
+        "id": "b3a6d56114efacfc",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "bb1a9cece6cb48358a6b054c442e3a3a.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
         "id": "5eb0bd6b.74b794",
         "type": "function",
         "z": "2924702c.b33a7",
@@ -961,5 +996,77 @@
                 "ae8ddf10.868fd"
             ]
         ]
+    },
+    {
+        "id": "516ea8171d25dcbc",
+        "type": "ui_form",
+        "z": "de97dacc84a43a42",
+        "name": "",
+        "label": "Enter your message:",
+        "group": "926d6874.375768",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "...",
+                "value": "message",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "message": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 480,
+        "y": 240,
+        "wires": [
+            [
+                "894e5e2c206ba8b9",
+                "b0d6b8a316981c38"
+            ]
+        ]
+    },
+    {
+        "id": "894e5e2c206ba8b9",
+        "type": "debug",
+        "z": "de97dacc84a43a42",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b0d6b8a316981c38",
+        "type": "mqtt out",
+        "z": "de97dacc84a43a42",
+        "name": "",
+        "topic": "web-to-mb/message",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b3a6d56114efacfc",
+        "x": 760,
+        "y": 340,
+        "wires": []
     }
 ]
