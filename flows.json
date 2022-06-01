@@ -1026,5 +1026,50 @@
         "x": 850,
         "y": 400,
         "wires": []
+    },
+    {
+        "id": "9c6515fdaefa0834",
+        "type": "inject",
+        "z": "3c1975f87cd0cabf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "d50bcc2fae3471b2"
+            ]
+        ]
+    },
+    {
+        "id": "d50bcc2fae3471b2",
+        "type": "debug",
+        "z": "3c1975f87cd0cabf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 540,
+        "wires": []
     }
 ]
