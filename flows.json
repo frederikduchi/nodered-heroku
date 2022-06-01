@@ -177,6 +177,386 @@
         }
     },
     {
+        "id": "7e6baf98.69239",
+        "type": "ui_group",
+        "name": "Global check",
+        "tab": "85a5817c.1b7c5",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f1bf23af235c0dc2",
+        "type": "ui_group",
+        "name": "Response",
+        "tab": "85a5817c.1b7c5",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "85a5817c.1b7c5",
+        "type": "ui_tab",
+        "name": "HYBUILD",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a14f81bfbb849ce6",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1e5f2c4c4d826db9",
+        "type": "ui_tab",
+        "name": "Sensors",
+        "icon": "device_hub",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d882d226ab44a9d9",
+        "type": "ui_group",
+        "name": "Sensor",
+        "tab": "1e5f2c4c4d826db9",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f994eabc581ae1ba",
+        "type": "ui_group",
+        "name": "Counter",
+        "tab": "1e5f2c4c4d826db9",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b76b175eb1c06672",
+        "type": "ui_group",
+        "name": "Sinusoid",
+        "tab": "1e5f2c4c4d826db9",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "62110531d2bada68",
+        "type": "ui_tab",
+        "name": "Map & Netatmo",
+        "icon": "map",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b22ef8f6de170fbc",
+        "type": "ui_group",
+        "name": "Locations",
+        "tab": "62110531d2bada68",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "bf61264521fde63b",
+        "type": "ui_link",
+        "name": "Editor",
+        "link": "https://nodered-on-cloud.herokuapp.com/editor",
+        "icon": "open_in_browser",
+        "target": "iframe",
+        "order": 5
+    },
+    {
+        "id": "926d6874.375768",
+        "type": "ui_group",
+        "name": "Splash screen",
+        "tab": "59e42317.d932fc",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "59e42317.d932fc",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e40e97d4.1356e8",
+        "type": "ui_group",
+        "name": "Menu",
+        "tab": "12c7c5a9.cc3c3a",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f2aefa84.a9a108",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "12c7c5a9.cc3c3a",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b09937f3.b814f8",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "12c7c5a9.cc3c3a",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "75944167.0434b",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "12c7c5a9.cc3c3a",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "12c7c5a9.cc3c3a",
+        "type": "ui_tab",
+        "name": "Exercise",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "40dcb9a28f8e5055",
+        "type": "ui_group",
+        "name": "Security",
+        "tab": "1e5f2c4c4d826db9",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "bf8263b00b0e9ea1",
+        "type": "ui_group",
+        "name": "Web service API",
+        "tab": "1e5f2c4c4d826db9",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "160e81fb.f1c86e",
+        "type": "ui_group",
+        "name": "File Browser",
+        "tab": "b63d1f91.68095",
+        "order": 1,
+        "disp": false,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b63d1f91.68095",
+        "type": "ui_tab",
+        "name": "Files",
+        "icon": "folder_open",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ddb72df8452ba7d7",
+        "type": "ui_group",
+        "name": "Desktop",
+        "tab": "b63d1f91.68095",
+        "order": 4,
+        "disp": true,
+        "width": 24,
+        "collapse": false
+    },
+    {
+        "id": "af2fe563cfd2cfa6",
+        "type": "ui_group",
+        "name": "Mobile",
+        "tab": "b63d1f91.68095",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "15dfb40eb8a9110b",
+        "type": "ui_group",
+        "name": "Netatmo",
+        "tab": "62110531d2bada68",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "739f3ba4668cb4d8",
+        "type": "ui_group",
+        "name": "Links",
+        "tab": "85a5817c.1b7c5",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "26e8fe8026c92abb",
+        "type": "ui_group",
+        "name": "Properties",
+        "tab": "b63d1f91.68095",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4128a70510a0cd4e",
+        "type": "ui_group",
+        "name": "Preview",
+        "tab": "b63d1f91.68095",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9ee91c1b.c2b67",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "b37faec6.3798a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b37faec6.3798a",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
         "id": "5eb0bd6b.74b794",
         "type": "function",
         "z": "2924702c.b33a7",
@@ -215,6 +595,38 @@
             [
                 "b481381501d2b414"
             ]
+        ]
+    },
+    {
+        "id": "1dc8605f.7ac4e",
+        "type": "change",
+        "z": "3c1975f87cd0cabf",
+        "name": "set headers",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers",
+                "pt": "msg",
+                "to": "{\"User-Agent\":\"Node-RED\"}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "headers.auth",
+                "pt": "msg",
+                "to": "AUTHORIZATION_HEADER",
+                "tot": "env"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 220,
+        "wires": [
+            []
         ]
     },
     {
@@ -295,8 +707,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1030,
-        "y": 400,
+        "x": 870,
+        "y": 620,
         "wires": []
     },
     {
