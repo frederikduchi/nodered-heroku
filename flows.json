@@ -567,7 +567,7 @@
     {
         "id": "b3a6d56114efacfc",
         "type": "mqtt-broker",
-        "name": "",
+        "name": "hivemq",
         "broker": "bb1a9cece6cb48358a6b054c442e3a3a.s1.eu.hivemq.cloud",
         "port": "8883",
         "tls": "",
