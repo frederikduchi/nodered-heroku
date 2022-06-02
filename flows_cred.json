@@ -3,7 +3,7 @@
         "password": "${AUTHORIZATION_HEADER}"
     },
     "b3a6d56114efacfc": {
-        "user": "frederikdc",
-        "password": "D3kwh2rn2"
+        "user": "${BROKER_USER}",
+        "password": "${BROKER_PASSWORD}"
     }
 }
