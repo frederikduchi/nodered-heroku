@@ -4,6 +4,6 @@
     },
     "b3a6d56114efacfc": {
         "user": "${BROKER_USER}",
-        "password": "${BROKER_PASSWORD}"
+        "password": "${BROKDER_PASSWORD}"
     }
 }
