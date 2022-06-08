@@ -1002,7 +1002,7 @@
         "type": "ui_form",
         "z": "de97dacc84a43a42",
         "name": "",
-        "label": "Enter your message:",
+        "label": "Uw boodschap:",
         "group": "926d6874.375768",
         "order": 0,
         "width": 0,
@@ -1020,13 +1020,13 @@
             "message": ""
         },
         "payload": "",
-        "submit": "submit",
-        "cancel": "cancel",
+        "submit": "verzenden",
+        "cancel": "annuleren",
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 480,
+        "x": 460,
         "y": 240,
         "wires": [
             [
