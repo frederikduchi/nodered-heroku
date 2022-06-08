@@ -24,6 +24,14 @@
         "env": []
     },
     {
+        "id": "d0464f6533dcce9d",
+        "type": "tab",
+        "label": "Spoken warning",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "2924702c.b33a7",
         "type": "subflow",
         "name": "ui-table handler",
@@ -923,6 +931,66 @@
             [
                 "f4c202a0667f3fdf",
                 "442035796fc9041c"
+            ]
+        ]
+    },
+    {
+        "id": "97f0f3252ee549a0",
+        "type": "ui_audio",
+        "z": "d0464f6533dcce9d",
+        "name": "warning",
+        "group": "926d6874.375768",
+        "voice": "Ellen",
+        "always": true,
+        "x": 860,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "f9bfa6945efcd2f4",
+        "type": "mqtt in",
+        "z": "d0464f6533dcce9d",
+        "name": "",
+        "topic": "mb-to-web/fallen",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "b3a6d56114efacfc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 460,
+        "y": 320,
+        "wires": [
+            [
+                "854d1231ab5cce1c"
+            ]
+        ]
+    },
+    {
+        "id": "854d1231ab5cce1c",
+        "type": "change",
+        "z": "d0464f6533dcce9d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Help, ik ben gevallen",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 320,
+        "wires": [
+            [
+                "97f0f3252ee549a0"
             ]
         ]
     }
