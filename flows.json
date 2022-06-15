@@ -819,14 +819,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 790,
-        "y": 240,
+        "y": 200,
         "wires": []
     },
     {
         "id": "b0d6b8a316981c38",
         "type": "mqtt out",
         "z": "de97dacc84a43a42",
-        "name": "",
+        "name": "web-to-mb/message",
         "topic": "web-to-mb/message",
         "qos": "",
         "retain": "",
@@ -836,10 +836,20 @@
         "correl": "",
         "expiry": "",
         "broker": "b3a6d56114efacfc",
-        "x": 675,
-        "y": 340,
+        "x": 725,
+        "y": 280,
         "wires": [],
         "l": false
+    },
+    {
+        "id": "e21ea1184a204bfe",
+        "type": "comment",
+        "z": "de97dacc84a43a42",
+        "name": "Demo 4 (boodschap op ledscherm)",
+        "info": "",
+        "x": 520,
+        "y": 200,
+        "wires": []
     },
     {
         "id": "442035796fc9041c",
@@ -935,6 +945,16 @@
         ]
     },
     {
+        "id": "72acbf856f681471",
+        "type": "comment",
+        "z": "a82782b95e598cab",
+        "name": "Demo 1: temperatuur",
+        "info": "",
+        "x": 260,
+        "y": 340,
+        "wires": []
+    },
+    {
         "id": "97f0f3252ee549a0",
         "type": "ui_audio",
         "z": "d0464f6533dcce9d",
@@ -986,7 +1006,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 640,
+        "x": 660,
         "y": 320,
         "wires": [
             [
